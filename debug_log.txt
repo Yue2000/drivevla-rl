@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/user/yc/DriveVLA-W0/train/train_rl_stage1.py", line 266, in <module>
+    main()
+  File "/home/user/yc/DriveVLA-W0/train/train_rl_stage1.py", line 238, in main
+    training_args, rl_args = parser.parse_args_into_dataclasses()
+  File "/home/user/.conda/envs/yc_drivevla/lib/python3.10/site-packages/transformers/hf_argparser.py", line 354, in parse_args_into_dataclasses
+    raise ValueError(f"Some specified arguments are not used by the HfArgumentParser: {remaining_args}")
+ValueError: Some specified arguments are not used by the HfArgumentParser: ['--model_name_or_path', '/mnt/datasets/zyr/VLA_Emu/pretrained_models/Emu3-Stage1', '--data_path', '/mnt/datasets/zhangzhang/navsim/download/processed_data/meta/navsim_emu_vla_256_144_trainval_pre_1s.pkl']

@@ -1,0 +1,19 @@
+# 模型维度
+hidden_dim: 1024        # VLA 隐层维度
+latent_dim: 256         # Latent z 维度
+action_dim: 2           # 动作维度
+
+# Dynamics 模型
+dynamics_type: "mlp"    # 或 "emu3"
+imagination_horizon: 5  # 想象的步数
+
+# 学习率
+actor_lr: 3e-4
+critic_lr: 3e-4
+latent_lr: 1e-4
+dynamics_lr: 1e-4
+
+# 训练参数
+batch_size: 32
+num_epochs: 10
+device: "cuda:0"
